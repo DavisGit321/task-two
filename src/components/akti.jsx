@@ -20,7 +20,7 @@ class Akti extends Component {
         const { row } = this.state;
         const rowList = row.map(row => {
             return (
-                <div className="bod2-text"><a className="link-type4" href="" > {row.text} </a>
+                <div className="bod2-text" key={row.id}><a className="link-type4" href="" > {row.text} </a>
                     <br />{row.year}
                 </div>
             )
@@ -31,13 +31,3 @@ class Akti extends Component {
 }
 
 export default Akti;
-
-/*
-                        <div className="bod2-text"><a className="link-type4" href="" > Noteikumi par valsts nodevu, kas tiek iemaksātā valstī.</a>
-                            <br />2018. gada 1. septembrī
-                    </div>
-                        <div className="bod2-text"><a className="link-type4" href="" >
-                            </a>
-                            <br />
-                            </div>
-*/
